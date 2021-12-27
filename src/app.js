@@ -14,7 +14,7 @@ const cors = require('cors');
 const app = express();
 
 /* Define el puerto (falta la variable de entorno)  */
-app.set("port", 3000);
+app.set("port", process.env.PORT || 3000);
 
 /* Middlewares: Procesa algo antes de que termine */
 /* Permisos CORS */
